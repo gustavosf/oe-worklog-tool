@@ -1,0 +1,33 @@
+{
+    "credentials": {
+        "host": "objectedge.atlassian.net",
+        "basic_auth": {
+            "base64": "..."
+        }
+    },
+    "aliases": {
+        "daily": { 
+            "issue": "PA-176",
+            "time": "10m",
+            "comment": "daily"
+        },
+        "review": { 
+            "issue": "PA-176",
+            "time": "1h 30m",
+            "comment": "review"
+        },
+        "refinement": { 
+            "issue": "PA-176",
+            "time": "1h 30m",
+            "comment": "refinement"
+        },
+        "retrospective": { 
+            "issue": "PA-176",
+            "time": "1h 30m",
+            "comment": "retrospective"
+        },
+        "tech": { 
+            "issue": "PA-321"
+        }
+    }
+}
