@@ -21,8 +21,8 @@ program
     .option("-c, --comment <comment>", "Add a comment into the log")
     .action((alias, time, options) => {
         let conf = config.aliases[alias]
-        if (conf === undefined) console.log(`Alias [${alias}] does not exist`)
-        else if (time === undefined && conf.time === undefined) console.log(`There is no default time to log in the alias [${alias}]. You need to specify one`)
+        if (conf === undefined) conf = { issueKey: alias }
+        else if (time === undefined && conf.time === undefined) console.log(`There is no default time to log in [${alias}]. You need to specify one`)
         else {
             let payload = {
                 issueKey: conf.issue,
